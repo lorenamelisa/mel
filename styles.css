@@ -1,0 +1,57 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background color */
+body, html {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Container to center content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align items to the bottom */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5%; /* Adjust as needed */
+}
+
+/* Style for "Mel." */
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15vw; /* Increased from 10vw to 15vw */
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin-bottom: 3%; /* Increased space between name and message */
+}
+
+/* Style for the message */
+.message {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vw; /* Responsive font size */
+    color: white;
+    text-align: center;
+}
+
+/* Style for the email link */
+.message a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller devices */
+@media only screen and (max-width: 600px) {
+    .name {
+        font-size: 25vw; /* Increased font size for small screens */
+    }
+    .message {
+        font-size
